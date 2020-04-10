@@ -1,0 +1,21 @@
+# Copyright (c) 2020 Sybsuper
+# All Rights Reserved
+# Do not use this code without permission of the developer.
+messages: false
+event:
+  getDamage:
+    stopFlight: true
+    disableFlight: false
+    message: "&cYour fly mode was disabled because you took damage."
+  doDamage:
+    stopFlight: true
+    disableFlight: false
+    message: "&cYour fly mode was disabled because you did damage."
+  bowShot:
+    stopFlight: true
+    disableFlight: false
+    message: "&cYour fly mode was disabled because shot an arrow."
+  drop:
+    stopFlight: false
+    disableFlight: false
+    message: "&cYour fly mode was disabled because you dropped an item."

@@ -1,0 +1,10 @@
+name: SybStopFlight
+main: me.sybsuper.SybStopFlight.Main
+version: 1.0.0
+author: Sybsuper
+commands:
+  sybstopflight:
+    aliases: [ssf]
+    permission: sybstopflight.reload
+    description: Reload the config.yml file.
+    usage: /ssf
