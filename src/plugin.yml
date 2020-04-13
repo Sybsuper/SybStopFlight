@@ -1,6 +1,6 @@
 name: SybStopFlight
 main: me.sybsuper.SybStopFlight.Main
-version: 1.0.1
+version: 1.0.2
 author: Sybsuper
 commands:
   sybstopflight:

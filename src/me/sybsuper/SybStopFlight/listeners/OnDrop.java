@@ -28,12 +28,14 @@ public class OnDrop implements Listener {
 		if (p.getGameMode().equals(GameMode.SURVIVAL)) {
 			if (plugin.config.getBoolean("event.drop.stopFlight")) {
 				p.setFlying(false);
+				p.setFallDistance(0);
 				if (plugin.config.getBoolean("messages")) {
 					p.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.config.getString("event.drop.message")));
 				}
 			}
 			if (plugin.config.getBoolean("event.drop.disableFlight")) {
 				p.setAllowFlight(false);
+				p.setFallDistance(0);
 				if (plugin.config.getBoolean("messages")) {
 					p.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.config.getString("event.drop.message")));
 				}

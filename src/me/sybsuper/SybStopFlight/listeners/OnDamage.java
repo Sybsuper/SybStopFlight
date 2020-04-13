@@ -35,12 +35,14 @@ public class OnDamage implements Listener {
 			if (d.getGameMode().equals(GameMode.SURVIVAL)) {
 				if (plugin.config.getBoolean(s)) {
 					d.setFlying(false);
+					d.setFallDistance(0);
 					if (plugin.config.getBoolean("messages")) {
 						d.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.config.getString(s2)));
 					}
 				}
 				if (plugin.config.getBoolean(s3)) {
 					d.setAllowFlight(false);
+					d.setFallDistance(0);
 					if (plugin.config.getBoolean("messages")) {
 						d.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.config.getString(s2)));
 					}
